@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background: #3252aa;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  z-index: -1;
+}
+
+.container form {
+  background-color: rgba(255, 255, 255, 0.315);
+  width: 400px;
+  padding: 100px 50px;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid white;
+}
+
+.container form .heading {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.container form .input__form #username,
+.container form .input__form #password {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+.container form .input__form #username::-webkit-input-placeholder,
+.container form .input__form #password::-webkit-input-placeholder {
+  opacity: .2;
+  color: white;
+}
+
+.container form .input__form #username:-ms-input-placeholder,
+.container form .input__form #password:-ms-input-placeholder {
+  opacity: .2;
+  color: white;
+}
+
+.container form .input__form #username::-ms-input-placeholder,
+.container form .input__form #password::-ms-input-placeholder {
+  opacity: .2;
+  color: white;
+}
+
+.container form .input__form #username::placeholder,
+.container form .input__form #password::placeholder {
+  opacity: .2;
+  color: white;
+}
+
+.container form .btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  color: white;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.container form .btn:hover {
+  background: white;
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */
